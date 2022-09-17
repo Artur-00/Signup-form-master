@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    font-family: "Poppins";
+}
+
+.content {
+    display: flex;
+    padding: 50px 100px 0 100px;
+}
+
+/* Text-section */
+
+.text-section {
+    color: #fff;
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.text-section h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 55px;
+    max-width: 500px;
+}
+
+
+.text-section p {
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 30px;
+    max-width: 500px;
+}
+
+
+/* Form */
+
+.try-button button{
+    height: 50px;
+    width: 470px;
+    margin: 0 0 20px 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    color: #fff;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.151);
+}
+
+.try-button button:hover {
+    cursor: pointer;
+    background-color: hsl(248, 26%, 54%);
+}
+
+
+.form {
+    max-height: 480px;
+    width: 470px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input {
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid rgba(163, 163, 163, 0.616);
+    border-radius: 5px;
+    margin: 25px auto 0 auto;
+    padding-right: 50px;
+}
+
+input::placeholder {
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+}
+
+/* TREATING ERRORS */
+
+.input-error { 
+    background: url(/images/icon-error.svg) right no-repeat;
+    padding-right: 30px;
+    background-position-x: 360px;
+
+}
+
+.error {
+    margin-right: 40px;
+    font-size: 0.7em;
+    color: lightcoral;
+    font-weight: bold;
+    text-align: right;
+}
+
+.firstnameError,
+.lastnameError,
+.emailError,
+.passwordError {
+    display: none;
+}
+
+.claim-button button {
+    display: block;
+    width: 400px;
+    height: 50px;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto 0 auto;
+    box-shadow: 0px 4px hsla(154, 51%, 46%, 0.938);;
+}
+
+.claim-button button:hover {
+    cursor: pointer;
+    background-color: hsl(154, 55%, 62%);
+}
+
+.terms-and-services {
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.6em;
+    margin: 10px 0 8px 0;
+    color: rgba(0, 0, 0, 0.247);
+}
+
+.terms-and-services a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+.terms-and-services a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Responsiveness */
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+    }
+
+    .content {
+        display: block;
+        padding: 0;
+    }
+
+    .form {
+        max-height: 420px;
+        width: 400px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 100px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    .text-section {
+        margin: 60px 0 0 0 ;
+    }
+
+    .text-section h1 {
+        margin: auto;
+        font-size: 2em;
+        text-align: center;
+        font-weight: 700;
+        line-height: 40px;
+        max-width: 500px;
+    }
+
+    .text-section p {
+        margin: auto;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .form-section {
+        margin: 0;
+    }
+
+    .try-button button{
+        display: block;
+        height: 100px;
+        padding: 10px;
+        width: 300px;
+        margin: 60px auto;
+        font-size: 1.2em;
+    }
+
+    .form {
+        max-height: 480px;
+        width: 320px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 5px auto 60px auto;
+    }
+
+    .inputs input {
+        width: 270px;
+        height: 50px;
+        margin: 15px auto 0 auto;
+    }
+
+    .claim-button button {
+        width: 270px;
+    }
+
+    .terms-and-services p {
+        margin:  0 30px 0 30px;
+    }
+
+}
